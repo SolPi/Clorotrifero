@@ -1,0 +1,346 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Clock" >
+    
+	<com.google.ads.AdView
+	    android:id="@+id/adView"
+	    android:layout_alignParentTop="true"
+	    android:layout_width="320dp"
+	    android:layout_height="50dp" 
+	    ads:adSize="BANNER"
+	    ads:adUnitId="a1515ec36acddac"/>
+
+	    
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:layout_centerHorizontal="true"
+        android:gravity="top|center"
+        android:text="@string/Reloj"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="113dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button1"
+        android:layout_below="@id/textView1"
+        android:background="@drawable/mybutton_background"
+        android:minHeight="48dp"
+        android:onClick="Start"
+        android:scaleType="fitXY"
+        android:tag="n"
+        android:text="@string/Start"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="113dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:onClick="Restart"
+        android:text="@string/Restart"
+        android:textStyle="bold"
+        android:background="@drawable/mybutton_background"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="113dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveLap"
+        android:text="@string/Save"
+        android:textStyle="bold"
+        android:background="@drawable/mybutton_background"
+        android:scaleType="fitXY" />
+    
+    <TextView
+        android:id="@+id/cuentaatras1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sumahoracontra"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button3"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cuenta_atras"
+        android:tag="0n0"
+        android:text="@string/Reloj"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuentaatras2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cuentaatras1"
+        android:layout_toRightOf="@+id/horacontra"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cuenta_atras"
+        android:tag="0n0"
+        android:text="@string/Reloj"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuentaatras3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cuentaatras2"
+        android:layout_toRightOf="@+id/horacontra"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cuenta_atras"
+        android:tag="0n0"
+        android:text="@string/Reloj"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuentaatras4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cuentaatras3"
+        android:layout_toRightOf="@+id/horacontra"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cuenta_atras"
+        android:tag="0n0"
+        android:text="@string/Reloj"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuentaatras5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cuentaatras4"
+        android:layout_toRightOf="@+id/horacontra"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cuenta_atras"
+        android:tag="0n0"
+        android:text="@string/Reloj"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuentaatras6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cuentaatras5"
+        android:layout_toRightOf="@+id/horacontra"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cuenta_atras"
+        android:tag="0n0"
+        android:text="@string/Reloj"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuentaatras7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cuentaatras6"
+        android:layout_toRightOf="@+id/horacontra"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cuenta_atras"
+        android:tag="0n0"
+        android:text="@string/Reloj"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuentaatras8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cuentaatras7"
+        android:layout_toRightOf="@+id/horacontra"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cuenta_atras"
+        android:tag="0n0"
+        android:text="@string/Reloj"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuentaatras9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cuentaatras8"
+        android:layout_toRightOf="@+id/horacontra"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="cuenta_atras"
+        android:tag="0n0"
+        android:text="@string/Reloj"
+        android:textSize="30sp" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/Centesimas"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/Nulo" />
+    
+    
+    <TextView
+        android:id="@+id/mincontra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/cero"
+        android:visibility="invisible"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/restamincontra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/mincontra"
+        android:onClick="restar"
+        android:tag="mincontra"
+        android:text="@string/izquierda"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/sumamincontra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/mincontra"
+        android:onClick="sumar"
+        android:tag="mincontra"
+        android:text="@string/derecha"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/restahoracontra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/mincontra"
+        android:layout_alignRight="@+id/restamincontra"
+        android:onClick="restar"
+        android:tag="horacontra"
+        android:text="@string/izquierda"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/sumahoracontra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/mincontra"
+        android:layout_alignLeft="@+id/sumamincontra"
+        android:onClick="sumar"
+        android:tag="horacontra"
+        android:text="@string/derecha"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/horacontra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sumamincontra"
+        android:layout_toLeftOf="@+id/sumamincontra"
+        android:text="@string/cero"
+        android:visibility="invisible"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/segcontra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sumamincontra"
+        android:layout_toLeftOf="@+id/sumamincontra"
+        android:text="@string/cero"
+        android:visibility="invisible"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/restasegcontra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/restamincontra"
+        android:layout_below="@+id/mincontra"
+        android:onClick="restar"
+        android:tag="segcontra"
+        android:text="@string/izquierda"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/sumasegcontra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mincontra"
+        android:layout_toRightOf="@+id/mincontra"
+        android:onClick="sumar"
+        android:tag="segcontra"
+        android:text="@string/derecha"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+    ---------------------------------------------------
+    <ListView
+	    android:id="@+id/listView1"
+	    android:layout_width="170dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/cuentaatras9"
+	    android:layout_alignEnd="@+id/textView4"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/button2"
+	    android:layout_marginLeft="17dp"
+	    android:layout_marginTop="42dp"
+	    android:divider="#000000"
+	    android:dividerHeight="2dp"
+	    android:paddingRight="15dp"
+	    android:width="148dp" >
+
+	</ListView>
+
+    <Button
+        android:id="@+id/aceptarcuentaatras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segcontra"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:onClick="aceptarcuentaatras"
+        android:text="@string/aceptarcuentaatras"
+        android:visibility="invisible" />
+
+</RelativeLayout>

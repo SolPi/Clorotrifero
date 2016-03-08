@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clorotrifero</string>
+    <string name="menu_settings">Opciones</string>
+    <string name="Start">Empezar</string>
+    <string name="Reloj">00:00:00</string>
+    <string name="Restart">Reiniciar</string>
+    <string name="Save">Guardar</string>
+    <string name="izquierda">&lt;</string>
+    <string name="derecha">&gt;</string>
+    <string name="cero">00</string>
+    <string name="aceptarcuentaatras">Aceptar</string>
+    <string name="Centesimas">000</string>
+    <string name="Nulo"></string>
+    <string name="Delete">-</string>
+    
+    <string name="Pause">Parar</string>
+    <string name="Stop">PARAR</string>
+    <string name="Countdown">Cuenta atras</string>
+    <string name="CountdownDescp">La cuenta atras ha terminado</string>
+    <string name="Options">Opciones</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="DeleteMenu">Borrar</string>
+    <string name="DeleteMAll">Borrar todas</string>
+    <string name="Deleted">Borrada</string>
+    <string name="LapsDeleted">Laps Borradas</string>
+    <string name="confTimer">Conf. Cuenta Atras</string>
+    <string name="TextHour">Horas</string>
+    <string name="TextMin">Minutos</string>
+	<string name="TextSeg">Segundos</string>
+
+</resources>
